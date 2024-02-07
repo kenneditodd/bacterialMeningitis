@@ -1,12 +1,11 @@
 #!/bin/bash
 # This script will print to standard out.
 # Redirect output to save.
+# Used to check for any batch effects.
 
 # set variables
-files=/research/labs/neurology/fryer/m214960/mouseTBI/refs/fastq_file_list.txt
-
-# go to fastq dir
-cd /research/labs/neurology/fryer/m214960/mouseTBI/rawData
+cd ../../
+files=refs/fastq_file_list.txt
 
 # print fastq file name + header
 cat $files | while read file
