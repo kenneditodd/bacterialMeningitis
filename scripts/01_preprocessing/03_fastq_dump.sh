@@ -6,7 +6,7 @@ cd ../../rawData
 # export path
 export PATH=$PATH:/research/labs/neurology/fryer/m214960/tools/sratoolkit.3.0.7-centos_linux64/bin
 
-# download the runs in SRA format with the prefetch command
+# convert SRA format to fastq
 # https://kb.10xgenomics.com/hc/en-us/articles/115003802691-How-do-I-prepare-Sequence-Read-Archive-SRA-data-from-NCBI-for-Cell-Ranger
 cat ../refs/SRR_Acc_List.txt | while read line
 do
